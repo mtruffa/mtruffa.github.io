@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis Privacy Policy</title>
+<meta name="description" content="How Jarvis handles Google user data and other information.">
+<style>
+  :root { --bg: #fbfaf7; --text: #1d1d1f; --muted: #5f6368; --rule: #e6e3dc; --link: #1a56db; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111214; --text: #ececf1; --muted: #a0a4ab; --rule: #2a2c31; --link: #8fb4ff; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 Georgia, "Times New Roman", serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 20px 80px; }
+  h1 { font: 600 28px/1.25 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0 0 8px; }
+  .lede { color: var(--muted); margin: 0 0 32px; }
+  h2 { font: 600 18px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 32px 0 8px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--link); }
+  nav { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); font: 14px system-ui, sans-serif; color: var(--muted); }
+  nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lede">Jarvis &middot; last updated 26 September 2026</p>
+
+  <p>Jarvis is a personal assistant that runs on its owner's own computer and is used only by its owner.
+  This policy explains what it accesses, why, and where that information goes.</p>
+
+  <h2>Google data it accesses</h2>
+  <p>Only after the owner signs in with Google and grants permission, Jarvis uses:</p>
+  <ul>
+    <li><strong>Google Calendar events</strong> (<code>calendar.events</code>): to list the owner's events, add new events, and move existing events when the owner asks.</li>
+    <li><strong>Gmail, read-only</strong> (<code>gmail.readonly</code>): to list, search and read the owner's messages when the owner asks about their email.</li>
+    <li><strong>Gmail drafts</strong> (<code>gmail.compose</code>): to create email drafts for the owner to review. Jarvis contains no feature that sends email; the owner sends any draft themselves.</li>
+  </ul>
+
+  <h2>How it is used and shared</h2>
+  <ul>
+    <li>Calendar and email content is used only to answer the owner's own requests, at the moment they ask.</li>
+    <li>To understand a request, the relevant content is sent to Anthropic's API (the AI model that powers Jarvis), which processes it under Anthropic's commercial terms. Jarvis only uses Google data with Anthropic's models: its calendar and email features refuse to run on any other model.</li>
+    <li>When the owner asks Jarvis to phone them, a short spoken brief is sent to Retell AI to place the call. That brief can include the answer most recently shown on the owner's screen, which may mention a calendar event or email the owner had just asked about.</li>
+    <li>Google user data is never sold, never used for advertising, never used to train AI models, and never shared with anyone else.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <ul>
+    <li>The Google sign-in token is stored in a file on the owner's computer that only the owner's user account can read. It is never sent to a web browser or any other service.</li>
+    <li>Jarvis does not keep copies of emails or calendar events. It fetches them when asked, and keeps a short text history of the current conversation in memory, which is cleared when Jarvis restarts.</li>
+    <li>Transcripts of phone calls Jarvis places are saved on the owner's computer.</li>
+  </ul>
+
+  <h2>Removing access</h2>
+  <p>The owner can disconnect Google from Jarvis at any time, which revokes the token and deletes it, or remove
+  Jarvis's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Jarvis's use and transfer to any other app of information received from Google APIs will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+
+  <nav><a href="index.html">Home</a><a href="terms.html">Terms of service</a></nav>
+</main>
+</body>
+</html>
